@@ -4,9 +4,6 @@
     margin: 0;
 }
 
-body {
-    background-color: #d9dcd6;
-}
 /*This changes adds style and a different format to the contents inside the header class.*/
 .header {
     padding: 20px;
@@ -40,6 +37,11 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
+
+body {
+    background-color: #d9dcd6;
+}
+
 /*This indicates the color and type of text decoration the links in the global navigation should look like.*/
 a {
     color: #ffffff;
@@ -53,31 +55,116 @@ p {
 .hero {
     height: 800px;
     width: 100%;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%; 
+    /* padding: 2%; */
+    
+}
+
+.main-sections {
+    display:flex;
+    flex-direction: column;
+    
+}
+.section-layouts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    padding: 5%;
+    border-style: solid;
+}
+
+.section-layouts aside {
+    padding: 5%;
+}
+
+#middle-reversed-row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    padding: 5%;
+    border-style: solid;
+}
+
+#middle-reversed-row aside {
+    padding: 5%;
+}
+
+/*
+#search-engine-optimization {
+
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+
+
+    
+}
+
+#online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+#social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+*/
+#search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+#social-media-marketing img {
+    max-height: 200px;
+}
+
+#search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+#social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
+    margin-left: 2%;
+    padding: 2%;
     clear: both;
     float: right;
     width: 20%;
@@ -134,59 +221,7 @@ p {
     max-width: 150px;
 }
 
-#search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-#online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-#social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-#search-engine-optimization img {
-    max-height: 200px;
-}
-
-#online-reputation-management img {
-    max-height: 200px;
-}
-
-#social-media-marketing img {
-    max-height: 200px;
-}
-
-#search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-#online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-#social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
 
 .footer {
     padding: 30px;
