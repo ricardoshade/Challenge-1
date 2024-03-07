@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body {
+    background-color: #d9dcd6;
+}
+
 /*This changes adds style and a different format to the contents inside the header class.*/
 .header {
     padding: 20px;
@@ -38,10 +42,6 @@
     margin-left: 25px;
 }
 
-body {
-    background-color: #d9dcd6;
-}
-
 /*This indicates the color and type of text decoration the links in the global navigation should look like.*/
 a {
     color: #ffffff;
@@ -50,6 +50,10 @@ a {
 
 p {
     font-size: 16px;
+}
+
+h2 {
+    font-size: 36px;
 }
 
 .hero {
@@ -66,14 +70,13 @@ p {
     flex-direction: row;
     justify-content: space-between;
     margin: 2%; 
-    /* padding: 2%; */
+    /* padding: 4%; */
     
 }
 
 .main-sections {
     display:flex;
     flex-direction: column;
-    
 }
 .section-layouts {
     display: flex;
@@ -82,12 +85,13 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-    padding: 5%;
-    border-style: solid;
+    padding: 4%;
+    margin: 1%;
+    
 }
 
 .section-layouts aside {
-    padding: 5%;
+    padding: 3%;
 }
 
 #middle-reversed-row {
@@ -97,44 +101,15 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-    padding: 5%;
-    border-style: solid;
-}
-
-#middle-reversed-row aside {
-    padding: 5%;
-}
-
-/*
-#search-engine-optimization {
-
-    display: flex;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-
-
+    padding: 4%;
+    margin: 1%;
     
 }
 
-#online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+#middle-reversed-row aside {
+    padding: 3%;
 }
 
-#social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-*/
 #search-engine-optimization img {
     max-height: 200px;
 }
@@ -147,75 +122,37 @@ p {
     max-height: 200px;
 }
 
-#search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-#social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
 .benefits {
-    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
     padding: 2%;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
+    width: 50%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+/* .benefit-sections {
+    display: flex;
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+} */
 
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+#benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
+#benefit-brand img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-cost img {
+#benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -224,10 +161,12 @@ p {
 
 
 .footer {
-    padding: 30px;
-    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .footer h2 {
