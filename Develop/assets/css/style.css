@@ -4,197 +4,238 @@
     margin: 0;
 }
 
+/* Assigns a backround color to the webpage as a whole. */
 body {
     background-color: #d9dcd6;
 }
 
+/* Assigns a font size to all the h1 found within the body. */
+h1 {
+    font-size: 48px;
+}
+
+/*This changes adds style and a different format to the contents inside the header class.*/
 .header {
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
+/* Changes the color for "seo" */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+/* Assigns various values and style settings to contents within the navigation bar. */
+nav {
+    width: 65%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-.header div ul {
+/* Changes in the flow or direction of items found inside navigation bar, as well as padding and list style type. */
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     list-style-type: none;
+    padding: 2%;
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
+/*This indicates the color and type of text decoration the links in the global navigation should look like.*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Assigns a font size to all the p elements within the body. */
 p {
     font-size: 16px;
 }
 
+/* Assigns a font size to all the h2 elements within the body. */
+h2 {
+    font-size: 36px;
+}
+
+/* Indicates what the main cover image within the body should look like, how it needs to be positioned, and the link to the image. */
 .hero {
-    height: 800px;
+    height: 600px;
     width: 100%;
-    margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/* Sets the display type, direction flow, position, and margin percentage of contents within the main sections. */
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%; 
 }
 
+/* Sets the display type and direction flow of contents within each main section of the page. */
+.main-sections {
+    display:flex;
+    flex-direction: column;
+}
+
+/* Direction and display type for the layout within the main sections, as well as font families, color, padding, margin. */
+.section-layouts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    padding: 4%;
+    margin: 1%;
+}
+
+/* Assigns padding percentage for text within sections. */
+.section-layouts aside {
+    padding: 3%;
+}
+
+/* Direction and display type for the layout within the main sections, as well as font families, color, padding, margin. */
+#middle-reversed-row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    padding: 4%;
+    margin: 1%;
+}
+
+/* Assigns padding percentage for text within middle section. */
+#middle-reversed-row aside {
+    padding: 3%;
+}
+
+/* Set appropriate display type and positioning for images within the .content class. */
+.content img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px; 
+}
+
+/* Set appropriate display type, direction, and values for elements within the benefits column or section to match mock-up. */
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
+    padding: 2%;
+    width: 50%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
+.benefit-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
 }
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* Set appropriate display type, direction, and values for elements within the footer to match mock-up. */
 .footer {
-    padding: 30px;
-    clear: both;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
 }
 
 .footer h2 {
     font-size: 20px;
 }
+
+/* Change display type and size, positioning, and direction flow for content in the page when screen is 768px or smaller. */
+@media screen and (max-width: 768px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+   .nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4%;
+    }
+
+    .hero {
+        height: 300px;
+        width: 100%;
+        background-image: url("../images/digital-marketing-meeting.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .section-layouts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5%;
+    }
+
+    #middle-reversed-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .benefit-sections {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10%;
+    }
+  }
