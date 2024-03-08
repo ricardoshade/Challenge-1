@@ -1,2 +1,2 @@
-# Challenge-1
-First bootcamp challenge project
+# Code Refactoring
+Code refactoring exercise
